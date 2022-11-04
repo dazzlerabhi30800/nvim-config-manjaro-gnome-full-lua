@@ -104,10 +104,7 @@ return packer.startup(function(use)
 	-- use({ "akinsho/bufferline.nvim", tag = "v3.*", requires = "kyazdani42/nvim-web-devicons" })
 
 	--for tabs
-	use({
-		"romgrk/barbar.nvim",
-		requires = { "kyazdani42/nvim-web-devicons" },
-	})
+	use("nanozuki/tabby.nvim")
 
 	if packer_bootstrap then
 		require("packer").sync()
