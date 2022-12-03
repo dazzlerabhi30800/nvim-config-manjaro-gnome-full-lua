@@ -31,7 +31,12 @@ return packer.startup(function(use)
 	-- file explorer
 	use("nvim-tree/nvim-tree.lua")
 
+	-- theme
 	use("bluz71/vim-nightfly-guicolors")
+	use({
+		"svrana/neosolarized.nvim",
+		requires = { "tjdevries/colorbuddy.nvim" },
+	})
 
 	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
 
@@ -104,7 +109,7 @@ return packer.startup(function(use)
 	-- use({ "akinsho/bufferline.nvim", tag = "v3.*", requires = "kyazdani42/nvim-web-devicons" })
 
 	--for tabs
-	use("nanozuki/tabby.nvim")
+	-- use("nanozuki/tabby.nvim")
 
 	if packer_bootstrap then
 		require("packer").sync()

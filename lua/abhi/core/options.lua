@@ -35,8 +35,8 @@ opt.splitbelow = true
 opt.iskeyword:append("-")
 
 -- set cursor to line on insert mode
---opt.guicursor = "a:block-Cursor/lCursor"
-opt.guicursor = "n-v-c:block-Cursor/lCursor,i-cr:hor20,r-cr:hor20,o:hor50"
+opt.guicursor = "a:block-Cursor/lCursor"
+-- opt.guicursor = "n-v-c:block-Cursor/lCursor,i-cr:hor20,r-cr:hor20,o:hor50"
 
 -- for the emmet
 vim.g.user_emmet_leader_key = "<Tab>"
