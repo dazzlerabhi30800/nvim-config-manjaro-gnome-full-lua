@@ -43,3 +43,24 @@ vim.api.nvim_set_keymap("i", "<A-j>", "<Esc>:m '>+1<CR>==gi", { noremap = true }
 vim.api.nvim_set_keymap("i", "<A-k>", "<Esc>:m '<-2<CR>==gi", { noremap = true })
 vim.api.nvim_set_keymap("v", "<A-j>", ":m '>+1<CR>gv=gv", { noremap = true })
 vim.api.nvim_set_keymap("v", "<A-k>", ":m '<-2<CR>gv=gv", { noremap = true })
+
+-- for neovide zoom
+local mapKey = vim.api.nvim_set_keymap
+mapKey("n", "<C-p>", ":ZoomIn<CR>", { noremap = true, silent = true })
+mapKey("n", "<C-m>", ":ZoomOut<CR>", { noremap = true, silent = true })
+
+if vim.g.neovide == true then
+	vim.api.nvim_set_keymap(
+		"n",
+		"<C-+>",
+		":lua vim.g.neovide_scale_factor = vim.g.neovide_scale_factor + 0.1<CR>",
+		{ silent = true }
+	)
+	vim.api.nvim_set_keymap(
+		"n",
+		"<C-->",
+		":lua vim.g.neovide_scale_factor = vim.g.neovide_scale_factor - 0.1<CR>",
+		{ silent = true }
+	)
+	vim.api.nvim_set_keymap("n", "<C-0>", ":lua vim.g.neovide_scale_factor = 1<CR>", { silent = true })
+end

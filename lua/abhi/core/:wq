@@ -38,7 +38,7 @@ vim.opt.guifont = { "Hack NFM", ":h12" }
 vim.g.neovide_cursor_vfx_opacity = 200.0
 vim.g.neovide_cursor_animation_length = 0.020
 vim.g.neovide_remember_window_size = true
-vim.g.neovide_line_height = 50
+vim.g.line_height = "30%"
 --clipboard
 opt.clipboard:append("unnamedplus")
 
@@ -49,7 +49,7 @@ opt.splitbelow = true
 opt.iskeyword:append("-")
 
 -- set cursor to line on insert mode
--- opt.guicursor = "a:block-Cursor/lCursor"
+opt.guicursor = "a:block-Cursor/lCursor"
 -- opt.guicursor = "n-v-c:block-Cursor/lCursor,i-cr:hor20,r-cr:hor20,o:hor50"
 
 -- for the emmet

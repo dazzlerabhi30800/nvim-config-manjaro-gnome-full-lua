@@ -17,5 +17,6 @@ require("abhi.plugins.treesitter")
 require("abhi.plugins.gitsigns")
 require("abhi.plugins.colorizer")
 require("abhi.plugins.neosolarized")
+-- require("abhi.plugins.oneDark")
 
 -- require("abhi.plugins.tabby")

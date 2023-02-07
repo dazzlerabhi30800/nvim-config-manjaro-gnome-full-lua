@@ -3,8 +3,13 @@ if not status then
 	return
 end
 
+-- n.setup({
+-- 	comment_italics = true,
+-- })
 n.setup({
 	comment_italics = true,
+	background_set = false,
+	background_color = require("colorbuddy.init").Color.none,
 })
 
 local cb = require("colorbuddy.init")
@@ -14,6 +19,9 @@ local Group = cb.Group
 local groups = cb.groups
 local styles = cb.styles
 
+-- Color.new("base03", "#0A1D20")
+Color.new("base03", "#000A0A")
+Color.new("bg", colors.base03)
 Color.new("black", "#000000")
 Group.new("CursorLine", colors.none, colors.base03, styles.NONE, colors.base1)
 Group.new("CursorLineNr", colors.yellow, colors.black, styles.NONE, colors.base1)

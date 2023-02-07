@@ -211,6 +211,11 @@ _G.packer_plugins = {
     path = "/home/abhishek/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
+  ["onedark.nvim"] = {
+    loaded = true,
+    path = "/home/abhishek/.local/share/nvim/site/pack/packer/start/onedark.nvim",
+    url = "https://github.com/navarasu/onedark.nvim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/abhishek/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -235,6 +240,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/abhishek/.local/share/nvim/site/pack/packer/start/typescript.nvim",
     url = "https://github.com/jose-elias-alvarez/typescript.nvim"
+  },
+  ["vim-gui-zoom"] = {
+    loaded = true,
+    path = "/home/abhishek/.local/share/nvim/site/pack/packer/start/vim-gui-zoom",
+    url = "https://github.com/drzel/vim-gui-zoom"
   },
   ["vim-maximizer"] = {
     loaded = true,

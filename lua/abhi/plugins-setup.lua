@@ -111,6 +111,10 @@ return packer.startup(function(use)
 	--for tabs
 	-- use("nanozuki/tabby.nvim")
 
+	-- for neovide zoom
+	use("drzel/vim-gui-zoom")
+	use("navarasu/onedark.nvim")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
